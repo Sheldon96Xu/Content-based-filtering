@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[2]:
-
-
 import pandas as pd
 import csv
 import random
@@ -71,9 +68,6 @@ for exp in range(itr):
     allAccuracies.append(Accuracy)
 
 
-# In[8]:
-
-
 nTimesRecs = []
 for i in range(1,11):
     nTimesRecs.append(10*i)
@@ -85,9 +79,6 @@ for i in range(itr):
     plt.plot(nTimesRecs, allAccuracies[i], label=str((i+1)*batch_size)+" jobs")
 plt.legend()
 plt.show()
-
-
-# In[6]:
 
 
 with open(wd + "apps.tsv") as infile:
@@ -120,9 +111,6 @@ for idx, row in ds.iterrows():
 maxId = max(results.keys())
 
 print('done')
-
-
-# In[10]:
 
 
 Accuracy = []
